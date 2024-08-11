@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import About from './components/About/About';
 
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 
-
-
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { Nintendo } from './components/Nintendo/Nintendo';
@@ -73,10 +71,13 @@ function App() {
           {/* <NintendoMob/> */}
 
           <AnimatePresence>
-            <section id = "home">
-              <Landing/>
+            <section id="home">
+              <Landing />
             </section>
-            <section id = "events">
+            <section id="about">
+              <About />
+            </section>
+            <section id="events">
               <Events />
             </section>
           </AnimatePresence>
