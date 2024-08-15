@@ -7,7 +7,7 @@ import eventDetails from './eventDetails';
 const CardContainer = () => {
   return (
     <div
-      className="min-h-[100vh] flex flex-col justify-center mb-12 border-y-[1px] border-[#fff3d5] bg-cover bg-center bg-no-repeat"
+      className="min-h-[100vh] flex flex-col justify-center border-y-[1px] border-[#fff3d5] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${background})`,
       }}
