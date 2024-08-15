@@ -4,6 +4,7 @@ import About from './components/About/About';
 
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
+import Contact from './components/Contact/Contact';
 
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
@@ -79,6 +80,9 @@ function App() {
             </section>
             <section id="events">
               <Events />
+            </section>
+            <section id="contact">
+              <Contact />
             </section>
           </AnimatePresence>
         </BrowserRouter>
