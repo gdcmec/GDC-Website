@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
+import Footer from './components/footer/footer'
 
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
@@ -84,6 +85,7 @@ function App() {
             <section id="contact">
               <Contact />
             </section>
+            {/* <Footer /> */}
           </AnimatePresence>
         </BrowserRouter>
       )}

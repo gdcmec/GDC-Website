@@ -51,6 +51,8 @@
     box-sizing: border-box;
     width: 100vw;
     margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
   }
 
   #cardcont2{
@@ -67,6 +69,8 @@
     margin-top: 50px;
     width: 100vw;
     box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 100px;
   }
 
 
@@ -102,4 +106,24 @@
       margin-bottom: -23px;
     }
   }
+
+  /* @media (max-width: 2000px) {
+    #cardcont{
+      gap: 5rem;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    #cardcont2{
+      gap: 2rem;
+    }
+
+    .events-heading{
+      font-size: 2.8rem;
+    }
+
+    .eve{
+      scale: 0.8;
+    }
+  } */
   

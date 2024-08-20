@@ -64,10 +64,10 @@ body{
 
 .expimg{
     position: absolute;
-    bottom: 50px;
-    scale: 0.8;
-    height: 192px;
-    width: 192px;
+    bottom: 50px !important;
+    scale: 0.8 !important;
+    height: 192px !important;
+    width: 192px !important;
     border: none;
     background-image: url('../../assets/Group.png');
     background-color: transparent;
@@ -86,22 +86,22 @@ body{
 
 .con1{
     position: absolute;
-    scale: 0.5;
+    scale: 0.5 !important;
     opacity: 0.5;
-    left: -850px;
-    top: -250px;
-    transform: rotate(40deg);
+    left: -850px !important;
+    top: -250px !important;
+    transform: rotate(40deg) !important;
     z-index: 0;
     filter: grayscale(0.5);
 }
 
 .con2{
     position: absolute;
-    scale: 0.4;
+    scale: 0.4 !important;
     opacity: 0.5;
-    right: -700px;
-    top: 100px;
-    transform: rotate(20deg);
+    right: -750px !important;
+    top: 100px !important;
+    transform: rotate(20deg) !important;
     z-index: 0;
     filter: grayscale(0.5);
 }
@@ -310,8 +310,9 @@ body{
     font-size: 17px;
     cursor: pointer;
     border-radius: 10px; */
-    height: 45px;
-    width: 160px;
+    height: 45px    !important;
+    width: 160px !important;
+    scale: 1 !important;
     border-radius: 30px;
     position: absolute;
     top: 30px;
@@ -385,21 +386,22 @@ body{
     }
 
     .landing h1{
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         margin: 0;
         padding: 18px;
         text-align: center;
     }
 
     #sub{
-        font-size: 16px;
+        font-size: 14px !important;
     }
 
     .expimg{
-        height: 120px;
-        width: 120px;
+        height: 120px !important;
+        width: 120px !important;
+        scale: 0.8 !important;
         background-size: contain;
-        bottom: 110px;
+        bottom: 110px !important;
         font-size: 2em;
     }
 
@@ -438,20 +440,53 @@ body{
     }
 
     .con1{
-        scale: 1;
-        top: 90px;
-        left: -270px;
+        scale: 1 !important;
+        top: 90px !important;
+        left: -270px !important;
     }
     
     .con2{
-        scale: 1;
-        right: -250px;
-        top: 600px;
+        scale: 1 !important;
+        right: -250px !important;
+        top: 600px !important;
         transform: rotate(4deg);
     }
 
     .bgsvg{
         display: none;
+    }
+
+}
+
+@media (max-width: 2000px) {
+
+    .landing-h1{
+        font-size: 4rem;
+    }
+
+    .expimg{
+        scale: 0.5;
+        bottom: 10px;
+    }
+
+    #sub{
+        font-size: 1.3rem;
+    }
+
+    .con1{
+        left: -550px;
+        top: -180px;
+    }
+
+    .con2{
+        right: -550px;
+        top: 100px;
+        transform: rotate(2deg);
+    }
+
+    .blogbtn{
+        scale: 0.8;
+        top: 20px;
     }
 
 }

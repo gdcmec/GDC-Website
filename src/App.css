@@ -6,18 +6,21 @@
   width: 5px;
 }
 
-*::-webkit-scrollbar-button {
-}
 
 *::-webkit-scrollbar-track {
 }
 
-*::-webkit-scrollbar-corner {
-}
+
 
 *::-webkit-resizer {
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #e8903e;
+}
+
+#events{
+  background-image: url(./assets/events-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -329,3 +329,9 @@ body {
     scale: 0.8;
   }
 }
+
+@media (max-width: 2000px) {
+  .cardclass{
+    scale: 0.75;
+  }
+}

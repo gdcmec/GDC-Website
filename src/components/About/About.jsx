@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import logo from '../../assets/element.png'
+import { motion } from 'framer-motion'
 function About() {
   return (
 
@@ -16,8 +17,16 @@ function About() {
 </svg>
         {/* <div className="abtcontent"> */}
           {/* <div className="abttext"> */}
-              <h2 className='abh2'>About</h2>
-              <p className='abp'>
+              <motion.h2
+              initial={{opacity: 0, scale: 0.9}}
+              whileInView={{opacity: 1, scale: 1}}
+              transition={{duration: 1}}
+              className='abh2'>About</motion.h2>
+              <motion.p
+              initial={{opacity: 0, scale: 0.9}}
+              whileInView={{opacity: 1, scale: 1}}
+              transition={{duration: 1}}
+              className='abp'>
                 The Game Development Club (GDC) at Govt. Model Engineering College is an active community of students who are
                 passionate about gaming and game development. Through hands-on workshops, engaging discussions, and innovative
                 projects, members enhance their skills in programming, game design, and graphics.
@@ -25,7 +34,7 @@ function About() {
                 <br /> The MAZE-X Esports Community within GDC organizes exciting multiplayer competitions, providing
                 leadership and event management opportunities. Our club welcomes diverse interests, creating a space where
                 members can connect with peers and explore the evolving world of gaming and esports.
-              </p>
+              </motion.p>
           {/* </div> */}
 
             {/* <div className="abtimg">
