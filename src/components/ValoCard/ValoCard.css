@@ -33,8 +33,9 @@ body {
   position: absolute;
   top: 3.5px;
   z-index: 3;
+  /* right: 9px; */
   padding: 0 30px;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -76,9 +77,9 @@ body {
 .gaming-card:hover .card-content h2 {
   font-size: 15px;
 }
-.gaming-card:hover .status-report {
+/* .gaming-card:hover .status-report {
   display: none;
-}
+} */
 .card-content {
   width: 100%;
 }
@@ -135,8 +136,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  padding: 20px;
   /* transition-delay: 0.3s; */
+}
+
+.card-footer p{
+  color: #000;
+  text-align: justify;
+  font-size: 15px;
 }
 
 @media (hover: hover) {
@@ -148,9 +156,9 @@ body {
   .gaming-card:hover .card-content h2 {
     font-size: 15px;
   }
-  .gaming-card:hover .status-report {
+  /* .gaming-card:hover .status-report {
     display: none;
-  }
+  } */
   .gaming-card:hover .card-footer {
     visibility: visible;
     top: 60px;
@@ -201,6 +209,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   transition: all 0.15s ease;
+  text-decoration: none;
 }
 
 .btn::before,
@@ -290,6 +299,7 @@ body {
 
 .btn__content {
   position: relative;
+  color: #000;
 }
 
 .btn:hover {
@@ -311,4 +321,11 @@ body {
   --button-inner-border-color: var(--highlight-color);
   --button-text-color-hover: #ece8e1;
   --button-bits-color-hover: #ece8e1;
+}
+
+
+@media (max-width: 700px) {
+  .cardclass{
+    scale: 0.8;
+  }
 }

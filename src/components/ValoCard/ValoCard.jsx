@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'
 
 import './ValoCard.css';
 
@@ -6,7 +7,15 @@ const ValoCard = ({ event }) => {
   let date = new Date(event?.date);
   date = date.toLocaleDateString('en-IN');
   return (
-    <div className="mb-5 z-4">
+    <motion.div 
+    initial={{ opacity: 0, y: 50}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{
+        staggerChildren: 0.3,
+        delayChildren: 0.5,
+        duration: 0.5
+      }}
+    className="mb-5 z-4 cardclass">
       <div class="effect-card gaming-card">
         <div class="status-report">
           <p>{date}</p>
@@ -25,18 +34,18 @@ const ValoCard = ({ event }) => {
         <div class="card-footer">
           {/* <p className="font-black text-xl tracking-wide text-black">{date}</p> */}
           <p className="text-sm px-5 font-semibold text-black ">{event?.detail}</p>
-          <button class="btn">
+          <a class="btn" href= {event?.link} target='blank'>
             <span class="btn__inner">
               <span class="btn__slide"></span>
-              <span class="btn__content">REGISTER</span>
+              <span class="btn__content">{event?.status}</span>
             </span>
-          </button>
+          </a>
         </div>
         <div class="background-image">
           <img src={event?.image} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

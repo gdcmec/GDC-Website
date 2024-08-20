@@ -14,7 +14,7 @@ import { NintendoMob } from './components/NintendoMob/NintendoMob';
 import { Responsivehook1 } from './components/ResponsiveHook';
 import ValoCard from './components/ValoCard/ValoCard';
 import CardContainer from './components/CardContainer/CardContainer';
-import Events from './components/Events/Events';
+import Events from './components/CardContainer/CardContainer';
 
 function App() {
   const [loading, setLoading] = useState(true);

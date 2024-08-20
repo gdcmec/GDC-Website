@@ -1,267 +1,457 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&display=swap');
-
-#root{
-  overflow-x: hidden;
-  width: 100vw;
+@font-face {
+    font-family: Planet;
+    src: url(../../fonts/cyborg_punk/CyborgPunk.ttf);
 }
+
+@font-face {
+    font-family: space;
+    src: url(../../fonts/space_age/spaceage.ttf);
+}
+
+@font-face {
+    font-family: valorant;
+    src: url(../../fonts/valorant/ValorantFont.ttf);
+}
+
+@font-face {
+    font-family: nico;
+    src: url(../../fonts/NicoMoji-Regular.ttf);
+}
+
+@font-face {
+    font-family: drover;
+    src: url(../../fonts/drover/drover.ttf);
+}
+
 body{
-  overflow-x: hidden;
-}
-.text-title {
-  /* background-image: linear-gradient(
-    to right,
-    #462523 0,
-    #cb9b51 22%,
-    #f6e27a 45%,
-    #f6f2c0 50%,
-    #f6e27a 55%,
-    #cb9b51 78%,
-    #462523 100%
-  );
-  color: transparent;
-  font-weight: 500;
-  -webkit-background-clip: text; */
-
-  /* font-family: 'Iceberg'; */
-  font-family: 'Press Start 2P', cursive;
-  font-style: normal;
-  font-weight: 800;
-  /* font-size: 74px; */
-
-  color: white;
-
-  font-family: 'Monument Extended Regular', sans-serif;
-  /* or 150% */
-
-  text-align: center;
-
-  color: #ffffff;
-
-  /* or 100% */
-
-  /* color: #fff3d5; */
-
-  /* text-decoration-style: 1px solid #E9A800; */
-  /* text-shadow: 10px 4px 30px rgba(255, 253, 212, 0.5); */
-}
-
-.glassmorphism {
-  position: relative;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(17px);
-  -webkit-backdrop-filter: blur(17px);
-  border-radius: 10px;
-  z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-
-#home{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-#home h1{
-  font-size: 3vw;
-  
-  text-align: center;
-  display: flex;
-  margin: 0;
-  text-shadow: 2px 2px 2px rgb(53, 47, 47);
-}
-
-h1{
-  position: relative;
-  font-family: "Black Ops One", system-ui;
-  color: yellow;
-  transform: scale(2);
-  padding: 30px;
-  letter-spacing: 2px;
-  cursor: default;
-  text-transform: uppercase;
-}
-h1:hover:before,h1:hover:after {
-  padding: 30px;
-  color: yellow;
-  content: attr(data-text);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  top: 0;
-}
-h1:hover::before{
-  left: 3px;
-  text-shadow: -2px 0 red;
-  animation: glitch-2 2s linear infinite reverse;
-  
-
-}
-h1:hover::after{
-  left: -3px;
-  text-shadow: -2px 0 blue;
-  animation: glitch-2 2s linear infinite reverse;
-}
-
-#logo{
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: -45px;
-  top: -55px;
-}
-
-@keyframes glitch-1 {
-  0% {
-    clip: rect(132px, auto, 101px, 30px);
-  }
-  5% {
-    clip: rect(17px, auto, 94px, 30px);
-  }
-  10% {
-    clip: rect(40px, auto, 66px, 30px);
-  }
-  15% {
-    clip: rect(87px, auto, 82px, 30px);
-  }
-  20% {
-    clip: rect(137px, auto, 61px, 30px);
-  }
-  25% {
-    clip: rect(34px, auto, 14px, 30px);
-  }
-  30% {
-    clip: rect(133px, auto, 74px, 30px);
-  }
-  35% {
-    clip: rect(76px, auto, 107px, 30px);
-  }
-  40% {
-    clip: rect(59px, auto, 130px, 30px);
-  }
-  45% {
-    clip: rect(29px, auto, 84px, 30px);
-  }
-  50% {
-    clip: rect(22px, auto, 67px, 30px);
-  }
-  55% {
-    clip: rect(67px, auto, 62px, 30px);
-  }
-  60% {
-    clip: rect(10px, auto, 105px, 30px);
-  }
-  65% {
-    clip: rect(78px, auto, 115px, 30px);
-  }
-  70% {
-    clip: rect(105px, auto, 13px, 30px);
-  }
-  75% {
-    clip: rect(15px, auto, 75px, 30px);
-  }
-  80% {
-    clip: rect(66px, auto, 39px, 30px);
-  }
-  85% {
-    clip: rect(133px, auto, 73px, 30px);
-  }
-  90% {
-    clip: rect(36px, auto, 128px, 30px);
-  }
-  95% {
-    clip: rect(68px, auto, 103px, 30px);
-  }
-  100% {
-    clip: rect(14px, auto, 100px, 30px);
-  }
-}
-
-@keyframes glitch-2 {
-  0% {
-    clip: rect(129px, auto, 36px, 30px);
-  }
-  5% {
-    clip: rect(36px, auto, 4px, 30px);
-  }
-  10% {
-    clip: rect(85px, auto, 66px, 30px);
-  }
-  15% {
-    clip: rect(91px, auto, 91px, 30px);
-  }
-  20% {
-    clip: rect(148px, auto, 138px, 30px);
-  }
-  25% {
-    clip: rect(38px, auto, 122px, 30px);
-  }
-  30% {
-    clip: rect(69px, auto, 54px, 30px);
-  }
-  35% {
-    clip: rect(98px, auto, 71px, 30px);
-  }
-  40% {
-    clip: rect(146px, auto, 34px, 30px);
-  }
-  45% {
-    clip: rect(134px, auto, 43px, 30px);
-  }
-  50% {
-    clip: rect(102px, auto, 80px, 30px);
-  }
-  55% {
-    clip: rect(119px, auto, 44px, 30px);
-  }
-  60% {
-    clip: rect(106px, auto, 99px, 30px);
-  }
-  65% {
-    clip: rect(141px, auto, 74px, 30px);
-  }
-  70% {
-    clip: rect(20px, auto, 78px, 30px);
-  }
-  75% {
-    clip: rect(133px, auto, 79px, 30px);
-  }
-  80% {
-    clip: rect(78px, auto, 52px, 30px);
-  }
-  85% {
-    clip: rect(35px, auto, 39px, 30px);
-  }
-  90% {
-    clip: rect(67px, auto, 70px, 30px);
-  }
-  95% {
-    clip: rect(71px, auto, 103px, 30px);
-  }
-  100% {
-    clip: rect(83px, auto, 40px, 30px);
-  }
-}
-
-@media (max-width: 768px){
-  #bg{
-    position: absolute;
-    scale: 1.25;
-    display: none;
-  }
-
-  #home{
-    background-image: url(../../assets/mobilebg.jpg);
-    background-size: cover;
+    /* background-color: #2C2A28 */
+    /* background-image: linear-gradient(to right, #2C2A28, #242222); */
+    background-color: #000000;
+    overflow-x: hidden;
     background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+.bgsvg{
+    position: absolute;
+    height: 100vh;
+    width: 99vw;
+    z-index: -1;
+    margin-top: 25px;
+    display: block;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.landing{
+    position: relative;
+
+    /* color: linear-gradient(to right, #E66A1C, #F8BE1E); */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 170px; */
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.expimg{
+    position: absolute;
+    bottom: 50px;
+    scale: 0.8;
+    height: 192px;
+    width: 192px;
+    border: none;
+    background-image: url('../../assets/Group.png');
+    background-color: transparent;
+    font-size: 50px;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.expimg:hover{
+    font-size: 60px;
+    animation: rotation infinite;
+}
+
+.con1{
+    position: absolute;
+    scale: 0.5;
+    opacity: 0.5;
+    left: -850px;
+    top: -250px;
+    transform: rotate(40deg);
+    z-index: 0;
+    filter: grayscale(0.5);
+}
+
+.con2{
+    position: absolute;
+    scale: 0.4;
+    opacity: 0.5;
+    right: -700px;
+    top: 100px;
+    transform: rotate(20deg);
+    z-index: 0;
+    filter: grayscale(0.5);
+}
+
+
+.landing-h1{
+    font-size: 6rem;
+    /* margin-left: 60px; */
+    /* text-shadow: 2px 5px 15px #000; */
+    /* line-height: 200%; */
+    text-align: center;
+    font-family: drover;
+    font-weight: 300;
+    z-index: 2;
+    cursor: default;
+    z-index: 10;
+    color: yellow;
+    background: -webkit-linear-gradient(#E66A1C, #F8BE1E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.landing-h1:hover:before,
+.landing-h1:hover:after {
+    padding: 30px;
+    color: rgb(78, 78, 24);
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+  }
+  .landing-h1:hover::before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation: glitch-2 2s linear infinite reverse;
+    
+  
+  }
+  .landing-h1:hover::after{
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
+  
+  
+  @keyframes glitch-1 {
+    0% {
+      clip: rect(132px, auto, 101px, 30px);
+    }
+    5% {
+      clip: rect(17px, auto, 94px, 30px);
+    }
+    10% {
+      clip: rect(40px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(87px, auto, 82px, 30px);
+    }
+    20% {
+      clip: rect(137px, auto, 61px, 30px);
+    }
+    25% {
+      clip: rect(34px, auto, 14px, 30px);
+    }
+    30% {
+      clip: rect(133px, auto, 74px, 30px);
+    }
+    35% {
+      clip: rect(76px, auto, 107px, 30px);
+    }
+    40% {
+      clip: rect(59px, auto, 130px, 30px);
+    }
+    45% {
+      clip: rect(29px, auto, 84px, 30px);
+    }
+    50% {
+      clip: rect(22px, auto, 67px, 30px);
+    }
+    55% {
+      clip: rect(67px, auto, 62px, 30px);
+    }
+    60% {
+      clip: rect(10px, auto, 105px, 30px);
+    }
+    65% {
+      clip: rect(78px, auto, 115px, 30px);
+    }
+    70% {
+      clip: rect(105px, auto, 13px, 30px);
+    }
+    75% {
+      clip: rect(15px, auto, 75px, 30px);
+    }
+    80% {
+      clip: rect(66px, auto, 39px, 30px);
+    }
+    85% {
+      clip: rect(133px, auto, 73px, 30px);
+    }
+    90% {
+      clip: rect(36px, auto, 128px, 30px);
+    }
+    95% {
+      clip: rect(68px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(14px, auto, 100px, 30px);
+    }
+  }
+  
+  @keyframes glitch-2 {
+    0% {
+      clip: rect(129px, auto, 36px, 30px);
+    }
+    5% {
+      clip: rect(36px, auto, 4px, 30px);
+    }
+    10% {
+      clip: rect(85px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(91px, auto, 91px, 30px);
+    }
+    20% {
+      clip: rect(148px, auto, 138px, 30px);
+    }
+    25% {
+      clip: rect(38px, auto, 122px, 30px);
+    }
+    30% {
+      clip: rect(69px, auto, 54px, 30px);
+    }
+    35% {
+      clip: rect(98px, auto, 71px, 30px);
+    }
+    40% {
+      clip: rect(146px, auto, 34px, 30px);
+    }
+    45% {
+      clip: rect(134px, auto, 43px, 30px);
+    }
+    50% {
+      clip: rect(102px, auto, 80px, 30px);
+    }
+    55% {
+      clip: rect(119px, auto, 44px, 30px);
+    }
+    60% {
+      clip: rect(106px, auto, 99px, 30px);
+    }
+    65% {
+      clip: rect(141px, auto, 74px, 30px);
+    }
+    70% {
+      clip: rect(20px, auto, 78px, 30px);
+    }
+    75% {
+      clip: rect(133px, auto, 79px, 30px);
+    }
+    80% {
+      clip: rect(78px, auto, 52px, 30px);
+    }
+    85% {
+      clip: rect(35px, auto, 39px, 30px);
+    }
+    90% {
+      clip: rect(67px, auto, 70px, 30px);
+    }
+    95% {
+      clip: rect(71px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(83px, auto, 40px, 30px);
+    }
   }
 
-  #home h1{
-    font-size: 3.5vw;
-  }
+#sub{
+    font-family: space;
+    font-size: 30px;
+    color: #fff;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.blogbtn{
+    /* position: fixed;
+    height: 50px;
+    width: 150px;
+    top: 15px;
+    right: 40px;
+    background: linear-gradient(145deg, #242323, #302e2c);
+    box-shadow: 3px 3px 4px #1a1919,
+             -3px -3px 4px #474343;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: valorant;
+    color: rgb(216, 216, 30);
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px; */
+    height: 45px;
+    width: 160px;
+    border-radius: 30px;
+    position: absolute;
+    top: 30px;
+    right: 5vw;
+    border: none;
+    background-color: #000;
+    color: #F8BE1E;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.blogbtn:hover{
+    animation: btnhover 0.7s ease-in-out;
+}
+
+.logo{
+    display: none;
+}
+
+.blogbtn:active{
+    box-shadow: inset 3px 3px 4px #181717,
+            inset -3px -3px 4px #302d2d;
+    background: #242222;
+}
+
+.modeldiv{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.8;
+    margin: 0;
+}
+
+@keyframes btnhover{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        box-shadow: 2px 2px 3px #333333;
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+
+    body{
+        overflow-x: hidden !important;
+        background-image: linear-gradient(to bottom, #3D3D3D, #1F1F1F);
+    }
+
+    .landing{
+        flex-direction: column;
+    }
+
+    .landing h1{
+        font-size: 2.1rem;
+        margin: 0;
+        padding: 18px;
+        text-align: center;
+    }
+
+    #sub{
+        font-size: 16px;
+    }
+
+    .expimg{
+        height: 120px;
+        width: 120px;
+        background-size: contain;
+        bottom: 110px;
+        font-size: 2em;
+    }
+
+    .landing{
+        justify-content: center;
+        margin: 0;
+    }
+
+    ul{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    button{
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .blogbtn{
+        height: 35px;
+        width: 120px;
+        font-size: 14px;
+        right: 10px;
+        top: 20px;
+    }
+
+    .logo{
+        height: 170px;
+        width: 170px;
+        position: fixed;
+        display: flex;
+        top: -45px;
+        left: -45px;
+    }
+
+    .con1{
+        scale: 1;
+        top: 90px;
+        left: -270px;
+    }
+    
+    .con2{
+        scale: 1;
+        right: -250px;
+        top: 600px;
+        transform: rotate(4deg);
+    }
+
+    .bgsvg{
+        display: none;
+    }
+
 }

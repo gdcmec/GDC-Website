@@ -1,15 +1,105 @@
 @font-face {
     font-family: 'pacfont';
-    src: local('Pacfont'), url('../../assets/fonts/MonumentExtended/PAC-FONT.TTF') format('truetype');
+    src: local('Pacfont'), url('../../fonts/PAC-FONT.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   .events-heading {
     font-family: 'Pacfont', sans-serif;
+    color: #fff;
+    padding-top: 100px;
+    font-size: 3.75rem;
   }
 
-  #card{
+  .eve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .btn.active{
+    background-color: #ffffff;
+    color: #6b2121;
+    animation: appearbtn 0.5s ease-in-out;
+  }
+
+  .btn{
+    color: #fff;
+  }
+
+  #pas,
+  #upc{
+    font-family: 'valorant';
+    height: 45px;
+    width: 124px;
+  }
+
+  #cardcont{
     z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+    animation: appear 0.7s ease-in-out;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+    margin-right: 0;
+  }
+
+  #cardcont2{
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+    animation: appear 0.7s ease-in-out;
+    margin-top: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+
+
+  @keyframes appear {
+    0% { opacity: 0; transform: translateY(50px);}
+    100% { opacity: 1; transform: translateY(0px);}
+  }
+
+  @keyframes appearbtn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+
+  @media (max-width: 700px) {
+    #cardcont{
+      padding: 0;
+      gap: 0.3rem;
+    }
+
+    #cardcont2{
+      padding: 0;
+      gap: 0.3rem;
+    }
+
+    .events-heading{
+      font-size: 2.3rem;
+      padding-top: 50px;
+    }
+
+    .eve{
+      scale: 0.8;
+      margin-bottom: -23px;
+    }
   }
   

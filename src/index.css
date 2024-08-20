@@ -78,6 +78,11 @@
   letter-spacing: 0.4rem;
 }
 
+body{
+  background-color: #000;
+  overflow-x: hidden;
+}
+
 @keyframes shadows {
   0% {
     text-shadow: none;
