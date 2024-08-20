@@ -378,11 +378,12 @@ body{
 
     body{
         overflow-x: hidden !important;
-        background-image: linear-gradient(to bottom, #3D3D3D, #1F1F1F);
     }
-
+    
     .landing{
+        background-image: linear-gradient(to bottom, #3D3D3D, #1F1F1F);
         flex-direction: column;
+        height: 103vh;
     }
 
     .landing h1{
