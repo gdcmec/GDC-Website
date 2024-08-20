@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import lottie from "lottie-web";
 // import { defineElement } from "@lordicon/element";
-import './navbar.css'
+import './Navbar.css'
 import logo from '../../assets/GDC_Logo new.png'
 
 // defineElement(lottie.loadAnimation);
