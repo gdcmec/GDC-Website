@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import './landing.css'
+import './Landing.css'
 import logo from '../../assets/newlogo.png'
 // import Omodel from '../model/model'
 import { motion } from 'framer-motion'
