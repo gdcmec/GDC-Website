@@ -64,8 +64,8 @@ body{
 
 .expimg{
     position: absolute;
-    bottom: 50px !important;
-    scale: 0.8 !important;
+    bottom: 50px ;
+    scale: 0.8;
     height: 192px !important;
     width: 192px !important;
     border: none;
@@ -393,15 +393,15 @@ body{
     }
 
     #sub{
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
     .expimg{
-        height: 120px !important;
-        width: 120px !important;
-        scale: 0.8 !important;
+        height: 120px;
+        width: 120px;
+        scale: 0.8;
         background-size: contain;
-        bottom: 110px !important;
+        bottom: 110px;
         font-size: 2em;
     }
 
@@ -440,15 +440,15 @@ body{
     }
 
     .con1{
-        scale: 1 !important;
-        top: 90px !important;
-        left: -270px !important;
+        scale: 1;
+        top: 90px;
+        left: -270px;
     }
     
     .con2{
-        scale: 1 !important;
-        right: -250px !important;
-        top: 600px !important;
+        scale: 1;
+        right: -250px;
+        top: 600px;
         transform: rotate(4deg);
     }
 
@@ -457,8 +457,12 @@ body{
     }
 
 }
-/* 
-@media (max-width: 2000px) {
+
+@media (max-width: 1200px) {
+
+    .landing{
+      height: 100vh;
+    }
 
     .landing-h1{
         font-size: 4rem;
@@ -466,11 +470,11 @@ body{
 
     .expimg{
         scale: 0.5;
-        bottom: 10px;
+        bottom: -19px;
     }
 
     #sub{
-        font-size: 1.3rem;
+        font-size: 1.3rem; 
     }
 
     .con1{
@@ -489,4 +493,4 @@ body{
         top: 20px;
     }
 
-} */
+}
