@@ -6,6 +6,7 @@ import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer/footer'
+import Team from './components/Team/Team';
 
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
@@ -82,10 +83,13 @@ function App() {
             <section id="events">
               <Events />
             </section>
+            <section id="team">
+              <Team />
+            </section>
             <section id="contact">
               <Contact />
             </section>
-            {/* <Footer /> */}
+            <Footer />
           </AnimatePresence>
         </BrowserRouter>
       )}

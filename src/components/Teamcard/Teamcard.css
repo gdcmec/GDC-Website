@@ -1,0 +1,68 @@
+.card-container{
+    height: 430px;
+    width: 350px;
+    background-color: #1c1616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0FD42F;
+    height: 100%;
+}
+
+.member-name{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.position{
+    font-size: 1.1rem;
+    text-align: center;
+    padding-bottom: 20px;
+    /* word-spacing: 0.5rem; */
+}
+
+
+
+.cardimg{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    scale: 0.7;
+    place-content: center;
+}
+
+.connect-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1.3rem;
+    padding: 10px 10px 10px 10px;
+    padding-bottom: 50px;
+}
+
+.message{
+    border: 2px solid #0FD42F;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.connect{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #0FD42F;
+    margin: 0;
+    color: #1c1616;
+}
