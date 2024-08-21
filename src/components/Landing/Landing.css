@@ -86,22 +86,22 @@ body{
 
 .con1{
     position: absolute;
-    scale: 0.5 !important;
+    scale: 0.5;
     opacity: 0.5;
-    left: -850px !important;
-    top: -250px !important;
-    transform: rotate(40deg) !important;
+    left: -850px;
+    top: -250px;
+    transform: rotate(40deg);
     z-index: 0;
     filter: grayscale(0.5);
 }
 
 .con2{
     position: absolute;
-    scale: 0.4 !important;
+    scale: 0.4;
     opacity: 0.5;
-    right: -750px !important;
-    top: 100px !important;
-    transform: rotate(20deg) !important;
+    right: -750px;
+    top: 100px;
+    transform: rotate(20deg);
     z-index: 0;
     filter: grayscale(0.5);
 }
@@ -399,7 +399,7 @@ body{
     .expimg{
         height: 120px;
         width: 120px;
-        scale: 0.8;
+        scale: 0.6;
         background-size: contain;
         bottom: 110px;
         font-size: 2em;
@@ -458,7 +458,7 @@ body{
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (max-height: 700px) {
 
     .landing{
       height: 100vh;
