@@ -116,7 +116,9 @@ const CardContainer = () => {
           {filteredEvents.length ? (
             filteredEvents.map((event, index) => <ValoCard key={index} event={event} />)
           ) : (
-            <p>No upcoming events for {selectedCollege === 'All' ? 'any college' : selectedCollege}.</p>
+            <p className="text-white font-mfont h-[50vh] text-3xl text-center mx-10 pt-20">
+              No upcoming events for {selectedCollege === 'All' ? 'any college' : selectedCollege}.
+            </p>
           )}
         </motion.div>
       ) : (
@@ -124,7 +126,9 @@ const CardContainer = () => {
           {filteredPastEvents.length ? (
             filteredPastEvents.map((event, index) => <ValoCard key={index} event={event} />)
           ) : (
-            <p>No past events for {selectedCollege === 'All' ? 'any college' : selectedCollege}.</p>
+            <p className="text-white font-mfont h-[50vh] text-3xl text-center mx-10 pt-20">
+              No past events for {selectedCollege === 'All' ? 'any college' : selectedCollege}.
+            </p>
           )}
         </div>
       )}
