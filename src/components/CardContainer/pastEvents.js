@@ -200,7 +200,7 @@ const pastEvents = {
     },
   ],
   'Rajadhani Institute of Science & Technology': [
-    {
+   /* {
       title: 'VR Seminar',
       college: 'Rajadhani Institute of Science & Technology',
       venuep1: 'MAIN',
@@ -219,7 +219,7 @@ const pastEvents = {
       detail: 'A hands-on workshop on implementing AI for NPC behavior in games.',
       image: 'https://rare-gallery.com/thumbnail/394524-ai-gaming.jpg',
       status: 'View Report',
-    },
+    },*/
   ],
 };
 
