@@ -129,7 +129,7 @@ body {
 }
 
 .card-footer {
-  position: absolute;
+  /* position: absolute;
   top: 500px;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -138,13 +138,29 @@ body {
   align-items: center;
   gap: 3rem;
   padding: 20px;
-  /* transition-delay: 0.3s; */
+  overflow: auto;
+
+  transition-delay: 0.3s; */
+    position: absolute;
+    top: 500px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%; /* Ensure the element takes full width */
+    max-height: 900px; /* Set a maximum height to trigger scrolling */
+    transition: all 0.3s ease-in-out;
+  
 }
 
 .card-footer p{
   color: #000;
   text-align: justify;
   font-size: 15px;
+
 }
 
 @media (hover: hover) {

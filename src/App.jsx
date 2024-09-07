@@ -17,6 +17,8 @@ import { Responsivehook1 } from './components/ResponsiveHook';
 import ValoCard from './components/ValoCard/ValoCard';
 import CardContainer from './components/CardContainer/CardContainer';
 import Events from './components/CardContainer/CardContainer';
+import Pages from './pages'
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -70,26 +72,15 @@ function App() {
         <Responsivehook1 />
       ) : (
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           {/* <NintendoMob/> */}
 
           <AnimatePresence>
-            <section id="home">
-              <Landing />
-            </section>
-            <section id="about">
-              <About />
-            </section>
-            <section id="events">
-              <Events />
-            </section>
-            <section id="team">
-              <Team />
-            </section>
-            <section id="contact">
-              <Contact />
-            </section>
-            <Footer />
+            <Routes>
+              <Route index element = {<Pages />}/>
+              <Route path="/team" element={<Team />} />
+            </Routes>
+            {/* <Footer /> */}
           </AnimatePresence>
         </BrowserRouter>
       )}

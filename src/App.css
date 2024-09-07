@@ -7,13 +7,6 @@
 }
 
 
-*::-webkit-scrollbar-track {
-}
-
-
-
-*::-webkit-resizer {
-}
 
 *::-webkit-scrollbar-thumb {
   background-color: #e8903e;
@@ -25,3 +18,8 @@
   background-repeat: no-repeat;
 }
 
+#team{
+    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
+}

@@ -14,7 +14,8 @@ footer{
     background-color: #353232;
     display: flex;
     align-items: center;
-    /* padding-top: 35px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
     justify-content: space-around;
 }
 
@@ -47,6 +48,11 @@ footer{
     border: 2px solid rgb(255, 255, 255);
 }
 
+.slinks a:hover{
+    background-color: #fff;
+    color: #292727;
+}
+
 .uline{
     height: 2px;
     top: 5px;
@@ -54,7 +60,8 @@ footer{
     background-color: #fff;
     position: relative;
     display: flex;
-    background-color: rgb(216, 216, 30)
+    background-color: rgb(216, 216, 30);
+    width: 50%;
 }
 
 .caddr{
@@ -75,3 +82,52 @@ footer{
 .rights span{
     opacity: 0.6;
 }
+
+
+@media (max-width: 700px) {
+    
+    footer{
+        font-size: small;
+        z-index: 0;
+        height: fit-content;
+
+    }
+
+    .logoimgfooter{
+        height: 70px;
+        width: 70px;
+    }
+
+    .maincontent{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 30px;
+        width: 100%;
+        padding-bottom: 65px;
+    }
+
+    .socials{
+        width: 90%;
+    }
+
+    .uline{
+        display: none;
+    }
+
+    .socials h3{
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+
+    .slinks a{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 400px) and (max-height: 700px){
+    .rights{
+        font-size: 10px;
+    }
+  
+  }

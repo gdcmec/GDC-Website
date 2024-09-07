@@ -36,7 +36,7 @@ const landing = () => {
             whileInView={{y: 0, opacity: 0.5}}
             transition={{duration: 1}}
             className='con2' src={ controller } alt="" />
-            {<button className='blogbtn'>Zetrel</button>}
+            {/* {<button className='blogbtn'>Zetrel</button>} */}
               {/* <Navbar /> */}
               <motion.h1
                initial={{ opacity: 0, y: -50}}
