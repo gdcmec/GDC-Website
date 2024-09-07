@@ -112,13 +112,13 @@ const CardContainer = () => {
       </motion.div>
 
       {active ? (
-        <div id="cardcont">
+        <motion.div id="cardcont">
           {filteredEvents.length ? (
             filteredEvents.map((event, index) => <ValoCard key={index} event={event} />)
           ) : (
             <p>No upcoming events for {selectedCollege === 'All' ? 'any college' : selectedCollege}.</p>
           )}
-        </div>
+        </motion.div>
       ) : (
         <div id="cardcont2">
           {filteredPastEvents.length ? (
