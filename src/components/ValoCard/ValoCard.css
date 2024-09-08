@@ -147,7 +147,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     padding: 20px;
     overflow-y: auto; /* Enable vertical scrolling */
     width: 100%; /* Ensure the element takes full width */
@@ -159,7 +159,8 @@ body {
 .card-footer p{
   color: #000;
   text-align: justify;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: -25px;
 
 }
 
@@ -339,9 +340,136 @@ body {
   --button-bits-color-hover: #ece8e1;
 }
 
+.galleryOverlay{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000088;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.galleryContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
+  width: 80%;
+  background-color: #000;
+  border: 1px solid gold;
+  border-radius: 20px;
+  z-index: 11;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.galleryContainer h1{
+  font-family: 'valorant';
+  font-size: 2rem;
+}
+
+
+.close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mySwiper img {
+
+  width: 70%;
+  height: auto; 
+  max-height: 100%;
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto; 
+  padding: 20px;
+  user-select: none;
+  padding-bottom: 35px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: gold; 
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #3bcf16;
+  height: 40px; 
+  width: 40px; 
+  z-index: 12;
+  top: 50%; 
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-button-next {
+  right: 10px; 
+}
+
 
 @media (max-width: 700px) {
   .cardclass{
     scale: 0.8;
   }
+
+  .close-btn{
+    position: absolute;
+    top: 10px;
+    right: -15%;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .galleryOverlay{
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    right: 0;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #3bcf16;
+    height: 20px; 
+    width: 20px; 
+    scale: 0.5;
+    z-index: 12;
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
 }

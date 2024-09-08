@@ -14,7 +14,7 @@ const eventDetails = {
       venuep2: 'PROJECT LAB',
       date: '11/09/24',
       detail: ' Hosted by CODEC , the Department Association of Computer Science and Engineering, in collaboration with the Game Development Club of ICET. Learn Godot Engine and dive into the world of game development!',
-      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
+      image: 'https://i.imgur.com/P5SZOEO.jpeg',
       status: 'REGISTER',
       link: 'https://airtable.com/appJ3s5rLsvkbclNC/pagDVMIfVcog8C8qH/form',
     },

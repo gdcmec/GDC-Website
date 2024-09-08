@@ -1,33 +1,24 @@
 const pastEvents = {
   'MEC': [
-    {
-      title: 'Unity Workshop',
-      college: 'MEC',
-      venuep1: 'CCF',
-      venuep2: 'HALL',
-      date: '12/07/22',
-      detail:
-        'We host a variety of events, including seminars, game jams, competitions, and guest lectures to promote learning and creativity. The club also provides chances to promote and publish games, connect with other game makers, and learn useful industry insights',
-      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
-      status: 'View Report',
-    },
-    {
-      title: 'Game Jam',
-      college: 'MEC',
-      venuep1: 'SDPK',
-      venuep2: 'LAB',
-      date: '20/07/22',
-      detail: 'A competition where participants had to create a game prototype in a short period of time.',
-      image: 'https://rare-gallery.com/thumbnail/394522-gaming-game-jam.jpg',
-      status: 'View Report',
-    },
+
   ],
 
   'MES Engineering College': [
 
   ],
-  'Illahia College of Engineering': [
 
+  'Illahia College of Engineering': [
+    {
+      title: 'GDC Annual Fest',
+      college: 'Illahia Engineering College',
+      venuep1: 'Seminar Hall, ',
+      venuep2: 'Auditorium',
+      date: '14/02/24',
+      detail: 'GDC ICET has conducted "GDC ANNUAL FEST", on 14/02/2024 at 9.30 am, in collaboration with AKEF all Kerala eSports Federation. The GDC EXECOM members from other Six colleges participated in this event. The program started parallelly at Seminar Hall & Auditorium, Administrative Block with Introduction to GDC and One Day One Game (AR) Workshop respectively.',
+      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
+      status: 'View Gallery',
+      images: ['https://i.imgur.com/nBbyTm9.jpeg', 'https://i.imgur.com/Il7RMlx.jpeg', 'https://i.imgur.com/07duVjc.jpeg', 'https://i.imgur.com/jaoaKFq.jpeg', 'https://i.imgur.com/q6JzWfi.jpeg', 'https://i.imgur.com/EKBuMVq.jpeg', 'https://i.imgur.com/XKQvqcP.jpeg', 'https://i.imgur.com/YNDoR69.jpeg', 'https://i.imgur.com/E9MjR22.jpeg']
+    }
   ],
   'Adi Shankara Institute of Engineering and Technology': [
 
@@ -38,10 +29,23 @@ const pastEvents = {
       college: 'Mar Athanasius College of Engineering',
       venuep1: 'MAIN',
       venuep2: 'HALL',
-      date: '14/07/22',
+      date: '08/04/24',
       detail: 'The Game Development Club (GDC) held an introductory session to welcome new members and provide an overview of game design, development, and programming. The session covered key aspects like game art, storytelling, and coding, and highlighted past projects to inspire participants to explore game creation and innovation.',
       image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
-      status: 'View Report',
+      status: 'View Gallery',
+      images: ['https://i.imgur.com/avwYElR.jpeg', 'https://i.imgur.com/NkxDG9H.jpeg', 'https://i.imgur.com/ITGOJQc.jpeg', 'https://i.imgur.com/NPJR18b.jpeg']
+    },
+
+    {
+      title: '3 Day Workshop',
+      college: 'Mar Athanasius College of Engineering',
+      venuep1: 'Online',
+      venuep2: '',
+      date: 'May 5,6,7 /2024',
+      detail: 'A comprehensive 3-day workshop was conducted, with each session lasting 2 hours. Mr. Mohammed Shijin K, and Mr Abijith, members of the GDC Executive Committee, facilitated the workshop.Participants engaged in an in-depth exploration of Unity Engine features, such as game physics, animations, and scripting.',
+      image: 'https://i.imgur.com/INYVCIO.jpeg',
+      status: 'View Gallery',
+      images: []
     },
   ],
   'LBS Institute of Technology': [
@@ -57,26 +61,7 @@ const pastEvents = {
 
   ],
   'Rajadhani Institute of Science & Technology': [
-   /* {
-      title: 'VR Seminar',
-      college: 'Rajadhani Institute of Science & Technology',
-      venuep1: 'MAIN',
-      venuep2: 'HALL',
-      date: '14/07/22',
-      detail: 'Seminar on the future of virtual reality and its applications in gaming.',
-      image: 'https://rare-gallery.com/thumbnail/394523-vr-gaming.jpg',
-      status: 'View Report',
-    },
-    {
-      title: 'AI in Games Workshop',
-      college: 'Rajadhani Institute of Science & Technology',
-      venuep1: 'LAB',
-      venuep2: '3',
-      date: '18/07/22',
-      detail: 'A hands-on workshop on implementing AI for NPC behavior in games.',
-      image: 'https://rare-gallery.com/thumbnail/394524-ai-gaming.jpg',
-      status: 'View Report',
-    },*/
+
   ],
 };
 
