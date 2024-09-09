@@ -1,6 +1,40 @@
 const pastEvents = {
   'MEC': [
+    {
+      title: 'GameWar',
+      college: 'Model Engineering College',
+      venuep1: 'Room No: ',
+      venuep2: '201',
+      date: 'August 5,7 2024',
+      detail: 'The GameWar debate competition on esports was successfully organized by GDC MEC. The event aimed to foster discussions and debates around the evolving world of esports, providing participants with an opportunity to showcase their debating skills and knowledge about the industry.',
+      image: 'https://i.imgur.com/D5U0lCn.jpeg',
+      status: 'View Gallery',
+      images: []
+    },
 
+    {
+      title: 'GameCraft 3 ',
+      college: 'Model Engineering College',
+      venuep1: 'SDPK ',
+      venuep2: 'Hall',
+      date: 'August 6 2024',
+      detail: 'The workshop aimed to introduce participants to the fundamentals of 3D game development using the Godot engine. Attendees had the opportunity to learn from experienced developers and engage in hands-on activities.',
+      image: 'https://i.imgur.com/zcVkXVU.jpeg',
+      status: 'View Gallery',
+      images: []
+    },
+
+    {
+      title: 'AMD Campus Powerplay',
+      college: 'Model Engineering College',
+      venuep1: 'SDPK ',
+      venuep2: 'Hall',
+      date: 'August 19 2024',
+      detail: '',
+      image: 'https://i.imgur.com/cFJWI1O.jpeg',
+      status: 'View Gallery',
+      images: []
+    }
   ],
 
   'MES Engineering College': [
