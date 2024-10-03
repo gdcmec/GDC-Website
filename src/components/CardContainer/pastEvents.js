@@ -1,5 +1,19 @@
 const pastEvents = {
   'MEC': [
+
+    {
+      title: 'GameCraft 4',
+      college: 'Model Engineering College',
+      venuep1: 'SDPK ',
+      venuep2: 'Hall',
+      date: 'September 9 2024',
+      detail: 'Gamecraft 4.0, the fourth session in the workshop series by GDC MEC, was a 4-day event focused on improving skills in 3D game development using Unity.',
+      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
+      status: 'View Gallery',
+      images: ['https://i.imgur.com/7GNkJJv.jpeg', 'https://i.imgur.com/DjeAuMa.jpeg', 'https://i.imgur.com/F69OHja.jpeg', 'https://i.imgur.com/1A13oMQ.jpeg', 'https://i.imgur.com/k7cSYV3.jpeg']
+    },
+
+
     {
       title: 'GameWar',
       college: 'Model Engineering College',

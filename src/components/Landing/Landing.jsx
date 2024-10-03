@@ -11,6 +11,7 @@ const landing = () => {
 
   // const logomodel =  useGLTF('./GDC_logo_glb.glb');
 
+
   return (
     <>
 
@@ -36,14 +37,19 @@ const landing = () => {
             whileInView={{y: 0, opacity: 0.5}}
             transition={{duration: 1}}
             className='con2' src={ controller } alt="" />
-            {/* {<button className='blogbtn'>Zetrel</button>} */}
+            {<a href='https://www.zetrel.in' target='blank' className='blogbtn'>Zetrel</a>}
               {/* <Navbar /> */}
               <motion.h1
                initial={{ opacity: 0, y: -50}}
                whileInView={{opacity: 1, y: 0}}
                transition={{duration: 1}}
                className='landing-h1'
-              >Game Development<br></br>Club<br></br><span id = "sub">Think It • Build It • Play It</span><br></br><span></span></motion.h1>
+              >Game Development<br></br><span className='landing-h1'>Club</span><br></br></motion.h1>
+              <motion.span
+              id = "sub"
+              initial={{ opacity: 0, y: -50}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 1}}>Think It • Build It • Play It</motion.span>
               <motion.a 
               initial = {{opacity: 0, scale: 0.9}}
               whileInView={{opacity:1, scale: 1}}

@@ -47,7 +47,7 @@ const CardContainer = () => {
                 id="college-select"
                 onChange={(e) => handleCollegeChange(e.target.value)}
               >
-                <option value="MEC">MEC</option>
+                <option value="MEC">Model Engineering College</option>
                 <option value="MES Engineering College">MES Engineering College</option>
                 <option value="Illahia College of Engineering">Illahia College of Engineering</option>
                 <option value="Adi Shankara Institute of Engineering and Technology">

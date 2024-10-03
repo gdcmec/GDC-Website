@@ -114,6 +114,7 @@ body{
     /* line-height: 200%; */
     text-align: center;
     font-family: drover;
+    position: relative;
     font-weight: 300;
     z-index: 2;
     cursor: default;
@@ -122,18 +123,39 @@ body{
     background: -webkit-linear-gradient(#E66A1C, #F8BE1E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
-
+#landing-h1-span{
+  font-size: 6rem;
+  /* margin-left: 60px; */
+  /* text-shadow: 2px 5px 15px #000; */
+  /* line-height: 200%; */
+  text-align: center;
+  font-family: drover;
+  position: relative;
+  font-weight: 300;
+  z-index: 2;
+  cursor: default;
+  z-index: 1;
+  color: yellow;
+  background: -webkit-linear-gradient(#E66A1C, #F8BE1E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .landing-h1:hover:before,
 .landing-h1:hover:after {
-    padding: 30px;
+    /* padding: 30px; */
+    content: "Game Development\nClub";
+    white-space: pre;
+    text-align: center;
+    /* display: block; */
     color: rgb(78, 78, 24);
-    content: attr(data-text);
+    /* content: attr(data-text); */
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 2;
     overflow: hidden;
     top: 0;
   }
@@ -150,6 +172,41 @@ body{
   
   }
   .landing-h1:hover::after{
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
+
+
+#landing-h1-span:hover:before,
+#landing-h1-span:hover:after {
+    /* padding: 30px; */
+    content: "Club";
+    /* text-align: center; */
+    /* display: block; */
+    color: rgb(78, 78, 24);
+    /* content: attr(data-text); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    margin: 0;
+    top: 0;
+  }
+
+  #landing-h1-span:hover{
+    animation: glitch-1 2s linear infinite reverse;
+  }
+
+  #landing-h1-span:hover::before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation: glitch-2 2s linear infinite reverse;
+    
+  
+  }
+  #landing-h1-span:hover::after{
     left: -3px;
     text-shadow: -2px 0 blue;
     animation: glitch-2 2s linear infinite reverse;
@@ -301,28 +358,16 @@ body{
 
 
 .blogbtn{
-    /* position: fixed;
-    height: 50px;
-    width: 150px;
-    top: 15px;
-    right: 40px;
-    background: linear-gradient(145deg, #242323, #302e2c);
-    box-shadow: 3px 3px 4px #1a1919,
-             -3px -3px 4px #474343;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: valorant;
-    color: rgb(216, 216, 30);
-    font-size: 17px;
-    cursor: pointer;
-    border-radius: 10px; */
-    height: 45px    !important;
-    width: 160px !important;
-    scale: 1 !important;
+    height: 45px;
+    width: 160px;
+    scale: 1;
     border-radius: 30px;
     position: absolute;
     top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     right: 5vw;
     border: none;
     background-color: #000;
@@ -751,6 +796,10 @@ body{
 
   .expimg{
     bottom: 50px;
+  }
+  
+  .blogbtn{
+    scale: 0.9;
   }
 
   .con1{

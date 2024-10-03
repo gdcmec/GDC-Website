@@ -1,16 +1,6 @@
 const eventDetails = {
   MEC: [
-    {
-      title: 'Gamecraft 4',
-      college: 'Model Engineering College',
-      venuep1: 'SDPK ',
-      venuep2: 'Hall',
-      date: '11/09/24',
-      detail: ' Dive into 3D Game Development with Unity! This 3-day workshop from August 21st to 23rd will immerse you in advanced techniques and hands-on projects, all while providing expert guidance and project mentorship.',
-      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
-      status: 'REGISTER',
-      link: 'https://bit.ly/GameCraft4',
-    }
+
   ],
 
   'MES Engineering College': [
