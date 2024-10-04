@@ -43,7 +43,7 @@ const footer = () => {
                             Thrikkakara, Kochi<br />
                             Kerala, PIN: 682021<br />
                             Contact Id: gdc.mec1@gmail.com<br />
-                            Phone: +91-484-2577379
+                            Phone: +91 9495925312
                         </p>
                     </div>
             </div>

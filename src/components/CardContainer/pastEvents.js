@@ -23,7 +23,7 @@ const pastEvents = {
       detail: 'The GameWar debate competition on esports was successfully organized by GDC MEC. The event aimed to foster discussions and debates around the evolving world of esports, providing participants with an opportunity to showcase their debating skills and knowledge about the industry.',
       image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
       status: 'View Gallery',
-      images: []
+      images: ['https://i.imgur.com/aEyDEip.jpeg', 'https://i.imgur.com/BMGpfxi.jpeg', 'https://i.imgur.com/CjAvdYx.jpeg', 'https://i.imgur.com/S1gn8UG.jpeg', 'https://i.imgur.com/YLS9w8L.jpeg', 'https://i.imgur.com/3F8kM5W.jpeg', 'https://i.imgur.com/Zr1IFhF.jpeg', 'https://i.imgur.com/xAvtrJ0.jpeg', 'https://i.imgur.com/liCVyw4.jpeg']
     },
 
     {
@@ -35,20 +35,9 @@ const pastEvents = {
       detail: 'The workshop aimed to introduce participants to the fundamentals of 3D game development using the Godot engine. Attendees had the opportunity to learn from experienced developers and engage in hands-on activities.',
       image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
       status: 'View Gallery',
-      images: []
+      images: ['https://i.imgur.com/P7flVbT.jpeg', 'https://i.imgur.com/DAzHoC4.jpeg', 'https://i.imgur.com/raAgMvv.jpeg', 'https://i.imgur.com/4j0KSbY.jpeg', 'https://i.imgur.com/Usa8CSa.jpeg', 'https://i.imgur.com/PHjGdpS.jpeg', 'https://i.imgur.com/IAGpP9v.jpeg']
     },
 
-    {
-      title: 'AMD Campus Powerplay',
-      college: 'Model Engineering College',
-      venuep1: 'SDPK ',
-      venuep2: 'Hall',
-      date: 'August 19 2024',
-      detail: '',
-      image: 'https://rare-gallery.com/thumbnail/394521-valorant-game-agents-hero-4k-pc-wallpaper.jpg',
-      status: 'View Gallery',
-      images: []
-    }
   ],
 
   'MES Engineering College': [

@@ -5,15 +5,20 @@ services:
     build:
       context: .         
       dockerfile: Dockerfile
-    container_name: gdc_website_container
-    ports:
-      - "80:5173"      
+    container_name: gdc_website_container    
     volumes:
       - app_data:/app
     environment:
       - NODE_ENV=production
+      - VIRTUALPORT=5173
       - VIRTUAL_HOST=gdc.mec.ac.in
 
 volumes:
   app_data:
+
+networks:
+  default:
+    external:
+      name: mec
+
 

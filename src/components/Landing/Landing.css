@@ -20,7 +20,8 @@
 
 @font-face {
     font-family: drover;
-    src: url(../../fonts/drover/drover.ttf);
+    src: url(../../fonts/drover/drover.woff2) format('woff2'),
+    url(../../fonts/drover/drover.ttf) format('truetype');
 }
 
 body{
