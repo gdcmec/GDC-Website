@@ -784,6 +784,7 @@ body{
   }
 }
 
+
 @media (min-width: 500px) and (max-width: 550px) and (min-height: 700px) and (max-height:750px){
   .con1{
     left: -330px;
@@ -809,5 +810,30 @@ body{
   }
 }
 
+
+
+@media (min-width: 200px) and (max-width: 300px){
+  .landing-h1{
+    scale: 0.7;
+  }
+
+  #sub{
+    font-size: 0.6rem;
+  }
+
+  .con1{
+    left: -150px;
+  }
+
+  .con2{
+    top: 350px;
+    right: -150px;
+  }
+
+  .expimg{
+    scale: 0.4;
+    bottom: 20px;
+  }
+}
 
 
