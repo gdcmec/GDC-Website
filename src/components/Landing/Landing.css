@@ -472,6 +472,11 @@ body{
         flex-direction: column;
     }
 
+  .landing-h1:hover:before,
+  .landing-h1:hover:after {
+  content: '';
+}
+
     .landing h1{
         font-size: 2rem;
         margin: 0;
@@ -556,6 +561,10 @@ body{
       background-image: linear-gradient(to bottom, #3D3D3D, #1F1F1F);
       flex-direction: column;
   }
+  .landing-h1:hover:before,
+  .landing-h1:hover:after {
+  content: '';
+}
 
   .landing h1{
       font-size: 4rem;
