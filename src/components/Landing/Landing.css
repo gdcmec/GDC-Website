@@ -857,3 +857,27 @@ body{
 }
 
 
+@media (min-width: 100px) and (max-width: 200px){
+  .landing-h1{
+    scale: 0.5;
+  }
+
+  #sub{
+    font-size: 0.5rem;
+  }
+
+  .con1{
+    left: -250px;
+  }
+
+  .con2{
+    bottom: 350px;
+    right: -250px;
+  }
+
+  .expimg{
+    scale: 0.3;
+    bottom: 20px;
+  }
+}
+
